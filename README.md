@@ -9,29 +9,47 @@ All the formats contain book 2-6 of the _Naturalis Historia_, extracted from htt
 The corpus is annotated with linguistic information and Named Entity Recognition (NER) for persons. Individuals are linked to Wikidata and to the _Realencyclopädie der classischen Altertumswissenschaft_ (RE). 
 See the full paper for a detailed descritpion of the annotation.
 
-The following columns are part of each format:
-- wordref_id: unique identifier for each token, to be combined with extra column	
-- extra: extra number or letter, to be attached with the wordref_id to unambiguously identify each token
-- sent_id: unique sentence id
-- book: book (from 2 to 6)	
-- section: section of the book	
-- capitalized: 0/1 value to distinguish between capitalized and not capitalized tokens
-- token
-- lemma
-- lemma_index: lemma index to distinguish between homographic lemmas (see LASLA documentation)	
-- pos: Part of Speech tag, according to LASLA annotation schema	
-- morphology: morphological analysis, according to LASLA tag schema	
-- gold_ner: gold NER annotation in BIO format	
-- wikidata: Wikidata link	
-- TM_Real: RE identifier	
-- Artikel: RE article	
-- wikidata_qid	
-- Wikidata_label	
-- is_author_index: Boolean value for distinguishing sources in the text. The value has been semi-automatically corrected, as described in the paper	
-- merged_entity_id: number assigned to each mention. A multi-token mention is assigned the same number. 
-- in_index: Boolean value that states if an author is mentioned in Pliny's index for that book (see the paper for details)
+The columns in the data contains the following information:
+- **wordref_id**: unique identifier for each token, to be combined with extra column	
+- **extra**: extra number or letter, to be attached with the wordref_id to unambiguously identify each token
+- **sent_id**: unique sentence id
+- **book**: book (from 2 to 6)	
+- **section**: section of the book	
+- **capitalized**: 0/1 value to distinguish between capitalized and not capitalized tokens
+- **token**
+- **lemma**
+- **lemma_index**: lemma index to distinguish between homographic lemmas (see LASLA documentation)	
+- **pos**: Part of Speech tag, according to LASLA annotation schema	
+- **morphology**: morphological analysis, according to LASLA tag schema	
+- **gold_ner**: gold NER annotation in BIO format	
+- **wikidata**: Wikidata link	
+- **TM_Real**: RE identifier	
+- **Artikel**: RE article	
+- **wikidata_qid**	
+- **Wikidata_label**	
+- **is_author_index**: Boolean value for distinguishing sources in the text. The value has been semi-automatically corrected, as described in the paper	
+- **merged_entity_id**: number assigned to each mention. A multi-token mention is assigned the same number. 
+- **in_index**: Boolean value that states if an author is mentioned in Pliny's index for that book (see the paper for details)
+- **instance_of_id**	
+- **instance_of_label**	
+- **is_human**: Boolean value to distinguish between humans and deities/mythological entities
+- **citizenship_id**	
+- **citizenship_label**	
+- **language_id**	
+- **language_label**	
+- **occupation_id**	
+- **occupation_label**	
+- **sex_or_gender_id**	
+- **sex_or_gender_label**	
+- **is_author_wikidata**: authorial status on the basis of Wikidata values (includes false negatives)	
+- **citizenship_group**: Roma, Graecia, Africa, Asia or Germania (defined with Wikidata values)
+- **language_group**: Latin, Greek, Other (defined with Wikidata values)	
+- **is_politician**: Boolean value to distinguish between authors with and without a political status, on the basis of Wikidata occupation values
+- **occupation_category**: geohistorian (= Geographer or historian), philoscientist (= Philosopher or scientist), poet, polymath, politician (defined with Wikidata values)	
+- **period_final**: archaic, classic, hellenistic, augustean (=Augustan), early_empire
 
-The files are structured as follows:
+
+The folder contains the following files:
 
 - '**nh_original.csv**': this file contains the corpus with the information described above
 - '**nh_original_dates.csv**': this file contains the 'begin_date_final' and 'end_date_final' values, extracted from Evelien de Graaf's dataset
