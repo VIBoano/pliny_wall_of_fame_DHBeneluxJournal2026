@@ -31,7 +31,16 @@ The following columns are part of each format:
 - merged_entity_id: number assigned to each mention. A multi-token mention is assigned the same number. 
 - in_index: Boolean value that states if an author is mentioned in Pliny's index for that book (see the paper for details)
 
-The files are structured as it follows:
+The files are structured as follows:
 
-- 'nh_original.csv': this file contains the corpus with the information described above
-- 'nh_original_dates': this file contains the 'begin_date_final' and 'end_date_final' values, extracted from Evelien de Graaf's dataset
+- '**nh_original.csv**': this file contains the corpus with the information described above
+- '**nh_original_dates.csv**': this file contains the 'begin_date_final' and 'end_date_final' values, extracted from Evelien de Graaf's dataset
+- '**nh_extended_withdates.csv**': this file was generated on date 13/10/2026 with the code stored in the notebook 'wikidata_properties_extraction_pwof_DHBen2026.ipynb'. It contains the ids and labels for the Wikidata properties described in the code (P31, P27, P1412, P106, P21)
+- '**nh_categorized.csv**': in this file the entities are grouped in citizenship groups, language groups, occupation groups and chronological groups as described in the paper. The file is generated with the notebook 'wikidata_categorization_pwof_DHBen26.ipynb'.
+- '**nh_annotated.csv**': this file contains the data that was used to produce the graphs and calculations described in the paper. The Wikidata values were extracted in date 27/01/2026.
+
+### Code
+
+- '**wikidata_properties_extraction_pwof_DHBen2026.ipynb**': this Jupyter Notebook can be use to extract the Wikidata properties with the wikidata Python library. Properties are attached to the dataset. Input file: 'nh_original_dates.csv'; Output file: 'nh_extended_withdates.csv'
+- '**wikidata_categorization_pwof_DHBen26.ipynb**: this code categorizes the individuals contained in the corpus on the basis of the extracted Wikidata values. Input file: 'nh_extended_withdates.csv'; Output file: 'nh_categorized.csv'
+- '**results_pwof_DHBen26.ipynb**': this code produces the results presented in the paper. Input file:  'nh_categorized.csv' or 'nh_annotated.csv' (only the latter will output exactly the same results as described in the paper, since it contains the Wikidata values extracted in January)
