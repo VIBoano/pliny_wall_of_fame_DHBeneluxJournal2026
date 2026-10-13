@@ -48,6 +48,7 @@ The columns in the data contains the following information:
 - **occupation_category**: geohistorian (= Geographer or historian), philoscientist (= Philosopher or scientist), poet, polymath, politician (defined with Wikidata values)	
 - **period_final**: archaic, classic, hellenistic, augustean (=Augustan), early_empire
 
+----------------------------------------------------------------------------------------------------------------------------
 
 The folder contains the following files:
 
