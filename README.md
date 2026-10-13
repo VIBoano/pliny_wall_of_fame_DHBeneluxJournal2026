@@ -1,13 +1,15 @@
 # pliny_wall_of_fame_DHBeneluxJournal2026
-This repository contains the data and the code to replicate the results described in the paper "Pliny’s “Wall of Fame”: A Digital Semantic Approach to Citations and Sources in Books 2-6 of the _Naturalis Historia_", published in DH Benelux Journal 2026 by Valeria Irene Boano (KU Leuven) (https://orcid.org/0009-0003-2791-1365).
+This repository contains the data and the code to replicate the results described in the paper "Pliny’s “Wall of Fame”: A Digital Semantic Approach to Citations and Sources in Books 2-6 of the _Naturalis Historia_", published in DH Benelux Journal 2026 by [Valeria Irene Boano](https://scholar.google.com/citations?user=bULK2roAAAAJ&hl=it) (KU Leuven).
 
 ## Repository structure:
 
 ### Data
+
 The data folder contains the dataset used in the paper, in 5 different formats. 
 All the formats contain book 2-6 of the _Naturalis Historia_, extracted from https://github.com/lascivaroma/latin-lemmatized-texts/tree/0.1.2 and further annotated. 
 The corpus is annotated with linguistic information and Named Entity Recognition (NER) for persons. Individuals are linked to Wikidata and to the _Realencyclopädie der classischen Altertumswissenschaft_ (RE). 
 See the full paper for a detailed descritpion of the annotation.
+
 -----------------------------------------------------------------------------------------------------------------------------------------
 #### Data columns
 The columns in the data contains the following information:
@@ -58,6 +60,7 @@ The folder contains the following files:
 - '**nh_extended_withdates.csv**': this file was generated on date 13/10/2026 with the code stored in the notebook 'wikidata_properties_extraction_pwof_DHBen2026.ipynb'. It contains the ids and labels for the Wikidata properties described in the code (P31, P27, P1412, P106, P21)
 - '**nh_categorized.csv**': in this file the entities are grouped in citizenship groups, language groups, occupation groups and chronological groups as described in the paper. The file is generated with the notebook 'wikidata_categorization_pwof_DHBen26.ipynb'.
 - '**nh_annotated.csv**': this file contains the data that was used to produce the graphs and calculations described in the paper. The Wikidata values were extracted in date 27/01/2026.
+
 --------------------------------------------------------------------------------------------------------------------
 ### Code
 
