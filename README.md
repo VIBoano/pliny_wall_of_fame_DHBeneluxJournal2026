@@ -67,3 +67,13 @@ The folder contains the following files:
 - '**wikidata_properties_extraction_pwof_DHBen2026.ipynb**': this Jupyter Notebook can be use to extract the Wikidata properties with the wikidata Python library. Properties are attached to the dataset. Input file: 'nh_original_dates.csv'; Output file: 'nh_extended_withdates.csv'
 - '**wikidata_categorization_pwof_DHBen26.ipynb**: this code categorizes the individuals contained in the corpus on the basis of the extracted Wikidata values. Input file: 'nh_extended_withdates.csv'; Output file: 'nh_categorized.csv'
 - '**results_pwof_DHBen26.ipynb**': this code produces the results presented in the paper. Input file:  'nh_categorized.csv' or 'nh_annotated.csv' (only the latter will output exactly the same results as described in the paper, since it contains the Wikidata values extracted in January)
+
+-------------------------------------------------------------------------------------------------------------------------
+## Funding Statement
+This work has been carried out under funding from the European Union’s Horizon
+Europe Research and Innovation Programme through the Marie Sklodowska-Curie
+Actions Doctoral Network [MECANO](https://mecano-dn.eu/), Grant Agreement No. 101120349. Funded by the
+European Union. Views and opinions expressed are, however, those of the author(s)
+only and do not necessarily reflect those of the European Union or the European
+Research Executive Agency. Neither the European Union nor the granting authority
+can be held responsible for them.
