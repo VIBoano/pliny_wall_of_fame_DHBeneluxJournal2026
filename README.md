@@ -57,7 +57,7 @@ The folder contains the following files:
 
 - '**nh_original.csv**': this file contains the corpus with the information described above
 - '**nh_original_dates.csv**': this file contains the 'begin_date_final' and 'end_date_final' values, extracted from Evelien de Graaf's dataset
-- '**nh_extended_withdates.csv**': this file was generated on date 13/10/2026 with the code stored in the notebook 'wikidata_properties_extraction_pwof_DHBen2026.ipynb'. It contains the ids and labels for the Wikidata properties described in the code (P31, P27, P1412, P106, P21)
+- '**nh_extended_withdates.csv**': this file was generated on date 14/10/2026 with the code stored in the notebook 'wikidata_properties_extraction_pwof_DHBen2026.ipynb'. It contains the ids and labels for the Wikidata properties described in the code (P31, P27, P1412, P106, P21)
 - '**nh_categorized.csv**': in this file the entities are grouped in citizenship groups, language groups, occupation groups and chronological groups as described in the paper. The file is generated with the notebook 'wikidata_categorization_pwof_DHBen26.ipynb'.
 - '**nh_annotated.csv**': this file contains the data that was used to produce the graphs and calculations described in the paper. The Wikidata values were extracted in date 27/01/2026.
 
