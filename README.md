@@ -5,10 +5,11 @@ This repository contains the data and the code to replicate the results describe
 
 ### Data
 
-The data folder contains the dataset used in the paper, in 5 different formats. 
-All the formats contain book 2-6 of the _Naturalis Historia_, extracted from https://github.com/lascivaroma/latin-lemmatized-texts/tree/0.1.2 and further annotated. 
+The data folder contains the dataset used in the paper, in 5 different versions. 
+All the versions contain book 2-6 of the _Naturalis Historia_, originally extracted from the [Corpus Latin antiquité et antiquité tardive lemmatisé] (https://github.com/lascivaroma/latin-lemmatized-texts/tree/0.1.2). The original text was subjected to a curated annotation process and each version of the data contains a different level of annotation.
+
 The corpus is annotated with linguistic information and Named Entity Recognition (NER) for persons. Individuals are linked to Wikidata and to the _Realencyclopädie der classischen Altertumswissenschaft_ (RE). 
-See the full paper for a detailed descritpion of the annotation.
+See the full paper for a detailed description of the annotation.
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 #### Data columns
